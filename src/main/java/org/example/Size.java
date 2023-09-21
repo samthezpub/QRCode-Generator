@@ -1,7 +1,11 @@
 package org.example;
 
-import java.util.Comparator;
+import lombok.Getter;
 
+import java.util.Comparator;
+import java.util.Objects;
+
+@Getter
 public class Size {
     private final int vertical;
     private final int horizontal;
@@ -28,7 +32,7 @@ public class Size {
 
         // Проверка на одинаковые значения
         try {
-            if (splittedArray[0] != splittedArray[1]){
+            if (!Objects.equals(splittedArray[0], splittedArray[1])){
                 throw new CoordinatesValidException("Неравные значения");
             }
         }

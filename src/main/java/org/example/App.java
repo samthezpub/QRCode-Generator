@@ -17,7 +17,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Size size = new Size("1000x1000");
+        Size size = new Size("100x100");
         System.out.println(size.getVertical());
         System.out.println(size.getHorizontal());
         System.out.println( "" );
